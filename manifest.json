@@ -1,0 +1,18 @@
+{
+  "name": "UET Courses Name",
+  "description": "Show full name of a course in the courses webiste of UET - VNU",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://courses.uet.vnu.edu.vn/*"],
+      "js": ["js/jquery-3.6.1.slim.min.js","js/index.js"],
+      "css": ["css/style.css"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "",
+    "default_popup": "index.html",
+    "icons": { "128": "" }  
+  }
+}
